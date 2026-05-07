@@ -394,7 +394,7 @@ runs:
             file.write(processed_iss)
     - name: Build installer
       if: "${{ inputs.app-id != '' }}"
-      uses: Minionguyjpro/Inno-Setup-Action@v1.2.7
+      uses: Minionguyjpro/Inno-Setup-Action@v1.2.8
       with:
         options: /Qp
         path: ${{ inputs.love-actions-folder }}/${{ inputs.product-name }}.iss
