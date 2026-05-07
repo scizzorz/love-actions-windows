@@ -181,7 +181,7 @@ runs:
         cp -r -f ${{ inputs.extra-assets-x64 }} ${{ inputs.love-actions-folder }}/build/x64/
     - name: Checkout issrc
       if: "${{ inputs.app-id != '' }}"
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         path: ${{ inputs.love-actions-folder }}/issrc
         repository: jrsoftware/issrc
