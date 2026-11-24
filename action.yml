@@ -104,7 +104,7 @@ runs:
         rm ${{ env.TEMP_PATH }}
         mv love-${{ inputs.love-ref }}-win64 love-win64
 
-        curl -L --retry 5 http://www.angusj.com/resourcehacker/resource_hacker.zip -o ${{ env.TEMP_PATH }}
+        curl -L --retry 5 https://www.angusj.com/resourcehacker/resource_hacker.zip -o ${{ env.TEMP_PATH }}
         7z x ${{ env.TEMP_PATH }} -o'./'
         rm ${{ env.TEMP_PATH }}
 
